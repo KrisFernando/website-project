@@ -11,7 +11,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #2da3d6;
+  color: #313b3f;
 }
 
 a {
@@ -355,12 +355,16 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 60vh;
-  background: url("../img/new-hero-bg.png") center center;
-  background-size: cover;
+  height: 70vh;
   position: relative;
   margin-top: 70px;
   padding: 0;
+  overflow: hidden;
+}
+
+#myVideo {
+  width: 100%;
+  position: absolute;
 }
 
 #hero:before {
@@ -413,9 +417,33 @@ h6 {
   background: #4ea5e0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1160px) and (orientation: landscape) {
   #hero {
-    height: calc(100vh - 70px);
+    height: calc(60vh - 70px);
+  }
+}
+
+@media (max-width: 890px) and (orientation: landscape) {
+  #hero {
+    height: calc(50vh - 70px);
+  }
+}
+
+@media (max-width: 710px) and (orientation: landscape) {
+  #hero {
+    height: calc(40vh - 70px);
+  }
+}
+
+@media (max-width: 545px) and (orientation: landscape) {
+  #hero {
+    height: calc(30vh - 70px);
+  }
+}
+
+@media (orientation: portrait) {
+  #hero {
+    height: calc(30vh - 70px);
   }
 }
 
